@@ -1,28 +1,30 @@
-let deckOfCards = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 
+module.exports = function buildDeck(a) {
+  let deckOfCards = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 
+  let shuffleDeck = [];
+  function random(maximum) {
+    return Math.ceil(Math.random() * maximum);
+  };
 
-function shuffle(x) {
-  let deckA = [];
-  let cardA;
-  for (let i = 1; i <= x; i++) {
-    if (i >= 1) {
-      console.log(i);
-    }
-    else {
-      console.log("cats");
-    }
-  }
-
-  // push.deckA(cardA);
-
+  shuffleDeck.push(deckOfCards[random(deckOfCards.length)]);
+  console.log(shuffleDeck);
 };
 
 
-function random(maximum) {
-  return Math.ceil(Math.random() * maximum);
-};
+//
+//
+//   for (let i = 1; i <= x; i++) {
+//     if (i >= 1) {
+//       console.log(i);
+//       console.log(deckOfCards[i]);
+//     }
+//   }
+// };
 
-// console.log(random(52));
-
-shuffle(deckOfCards[random(14)]);
+// function random(maximum) {
+//   return Math.floor(Math.random() * deckOfCards.length);
+// };
+//
+//
+// shuffle(deckOfCards[random(deckOfCards.length)]);

@@ -17,28 +17,32 @@ let handA = [];
 let handB = [];
 
 deckOfCards.forEach(function deal(newCard) {
-  handA.push(newCard);
-  handB.push(newCard);
+  handA.push(newCard * random(deckOfCards.length));
+  handB.push(newCard * random(deckOfCards.length));
 
-  if (handA > handB) {
+
+if (handA[handA.length - 1] === handB[handB.length - 1]) {
+  console.log("tie");
+}
+  else if (handA[handA.length - 1] > handB[handB.length-1]) {
     console.log("A wins");
   }
-  else if (handB < handA) {
+  else {
     console.log("B wins");
   }
-  else {
-    console.log("tie");
-  }
-  return console.log(handA, handB);
+  // else {
+  //   console.log("tie");
+  // }
+  // return console.log(handA, handB);
 
 });
 
 
-
-
-  for (let i = 1; i <= deckOfCards.length; i++) {
-    if (i >= 1) {
-      console.log(i);
-      console.log(deckOfCards[i]);
-    };
-  };
+  //
+  //
+  // for (let i = 1; i <= deckOfCards.length; i++) {
+  //   if (i >= 1) {
+  //     console.log(i);
+  //     console.log(deckOfCards[i]);
+  //   };
+  // };

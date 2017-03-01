@@ -3,13 +3,35 @@
   let shuffleDeck = [];
 
   function random(maximum) {
-    return Math.ceil(Math.random() * maximum);
+    return Math.floor(Math.random() * maximum);
   };
 
   module.exports = function buildDeck(a) {
     return deckOfCards;
   // shuffleDeck.push(deckOfCards[random(deckOfCards.length)]);
 };
+
+
+
+let handA = [];
+let handB = [];
+
+deckOfCards.forEach(function deal(newCard) {
+  handA.push(newCard);
+  handB.push(newCard);
+
+  if (handA > handB) {
+    console.log("A wins");
+  }
+  else if (handB < handA) {
+    console.log("B wins");
+  }
+  else {
+    console.log("tie");
+  }
+  return console.log(handA, handB);
+
+});
 
 
 

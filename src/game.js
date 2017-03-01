@@ -7,7 +7,7 @@ let deckOfCards = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 
 let gameTime = new Date;
 
-let gameStats = {
+// let gameStats = {
   date: (gameTime.getMonth() + 1) + "/" + gameTime.getDate() + "/" + gameTime.getFullYear(),
   //players should be in an array with 2 people
   players: {
@@ -20,25 +20,13 @@ let gameStats = {
 
     playerTwo: {
       name: "Kerrigan",
-      numberOfWins: 13,
-      winRatio: 0.5,
+      numberOfWins: 0,
+      winRatio: 0,
     }
   },
-  numberOfTies: 3
+  numberOfTies: 0
 
 };
-
-let handA = [];
-let handB = [];
-
-deckOfCards.forEach(function deal(newCard) {
-  handA.push(newCard);
-  handB.push(newCard);
-  return console.log(handA, handB);
-
-});
-
-
 //
 //
 // function printAllTheThings(entity) {

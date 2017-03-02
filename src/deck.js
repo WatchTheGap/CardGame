@@ -40,12 +40,7 @@ if (handA[handA.length - 1] === handB[handB.length - 1]) {
   }
 });
 
+let winRatioOne = playerOne/52;
+let winRatioTwo = playerTwo/52;
 
-  //
-  //
-  // for (let i = 1; i <= deckOfCards.length; i++) {
-  //   if (i >= 1) {
-  //     console.log(i);
-  //     console.log(deckOfCards[i]);
-  //   };
-  // };
+console.log(winRatioOne, winRatioTwo);

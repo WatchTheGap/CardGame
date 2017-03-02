@@ -1,15 +1,16 @@
 // let runGame = require("./deck.js");
 
-let deckOfCards = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
-
-
-
 
 let gameTime = new Date;
 
 // let gameStats = {
+//
+// need to add if else for month to add 0 to single digit months
   date: (gameTime.getMonth() + 1) + "/" + gameTime.getDate() + "/" + gameTime.getFullYear(),
+
   //players should be in an array with 2 people
+  //placeholder values for players array
+  //variable names may be different than what is in deck file right now
   players: {
 
     playerJuan: {

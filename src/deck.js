@@ -6,7 +6,7 @@
 
   function random(maximum) {
     return Math.floor(Math.random() * maximum);
-  };
+  }
 
   module.exports = function buildDeck(a) {
     return deckOfCards;

@@ -13,34 +13,18 @@
 };
 
 
+//
+// function randomizer(x) {
+//   return Math.ceil(Math.random() * x);
+// }
+//
+// let deck = [];
+//
+// function deckGen() {
+//   if (deck.length < 52) {
+//     deck.push(randomizer(14));
+//     if deck.includes
+//   }
+// }
 
-let handA = [];
-let handB = [];
-let playerOne = 0;
-let playerTwo = 0;
-let ties = 0;
-
-deckOfCards.forEach(function deal(newCard) {
-  handA.push(newCard * random(deckOfCards.length));
-  handB.push(newCard * random(deckOfCards.length));
-
-if (handA[handA.length - 1] === handB[handB.length - 1]) {
-  ties = ties + 1;
-  console.log("tie");
-}
-  else if (handA[handA.length - 1] > handB[handB.length-1]) {
-    playerTwo = playerTwo + 1;
-    console.log(playerTwo);
-    console.log("A wins");
-  }
-  else {
-    playerOne = playerOne + 1;
-    console.log(playerOne);
-    console.log("B wins");
-  }
-});
-
-let winRatioOne = playerOne/52;
-let winRatioTwo = playerTwo/52;
-
-console.log(winRatioOne, winRatioTwo);
+// console.log(randomizer(14));
